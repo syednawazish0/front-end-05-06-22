@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+    <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
+    <br><br>
+
+    <h2>Active State</h2>
+    <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Primary link</a>
+    <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Link</a>
+
+    <h2>Disabled State</h2>
+    <button type="button" class="btn btn-lg btn-primary" disabled>Primary button</button>
+    <button type="button" class="btn btn-secondary btn-lg" disabled>Button</button>
+
+    <h2>Link functionality caveat</h2>
+    <a href="#" class="btn btn-primary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Primary link</a>
+    <a href="#" class="btn btn-secondary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Link</a>
+
+    <h2>Button plugin - Toggle states</h2>
+    <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
+        Single toggle
+      </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
